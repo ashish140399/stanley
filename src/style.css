@@ -1,6 +1,6 @@
-
 .containerBorder {
     position: relative;
+    width: 100%;
 }
 
 .containerBorder::before {
@@ -25,3 +25,10 @@
     z-index: 50;
 }
 
+
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: local('HelveticaNeue'),
+         url('./assets/fonts/HelveticaNeueCondensedBold.ttf') format('woff'),
+}

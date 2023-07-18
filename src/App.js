@@ -1,18 +1,23 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
-import CustomText from './components/CustomText';
-import Monogram from './components/Monogram';
-import Graphic from './components/Graphic';
+import HomePage from './components/HomePage';
+import ThankyouPage from './components/ThankyouPage';
+import "./assets/fonts/HelveticaNeueCondensedBold.ttf";
 
 
 function App() {
   return (
-   <>
-    {/* <Home /> */}
-    <CustomText />
-    {/* <Monogram /> */}
-    {/* <Graphic /> */}
-   </>
-  );
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/customize-item' element={<HomePage />} />
+          <Route path='/thankyou' element={<ThankyouPage />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
 
 export default App;
