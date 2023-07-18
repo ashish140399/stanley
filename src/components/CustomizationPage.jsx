@@ -5,7 +5,7 @@ import Content from './Content';
 
 
 
-const HomePage = () => {
+const CustomizationPage = () => {
 
     const [selectedOption, setSelectedOption] = useState("");
     const [title, setTitle] = useState("ADD CUSTOM TEXT");
@@ -153,4 +153,4 @@ const HomePage = () => {
 }
 
 
-export default HomePage;
+export default CustomizationPage;
