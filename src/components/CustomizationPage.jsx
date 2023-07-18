@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Base from './Base';
 import customTextItem from '../assets/images/customTextItem.png';
 import Content from './Content';
@@ -7,7 +7,7 @@ import Content from './Content';
 
 const CustomizationPage = () => {
 
-    const [selectedOption, setSelectedOption] = useState("");
+    const [selectedOption, setSelectedOption] = useState("text");
     const [title, setTitle] = useState("ADD CUSTOM TEXT");
     const [textTitle, setTextTitle] = useState("");
     const [monogramTitle, setMonogramTitle] = useState("");
