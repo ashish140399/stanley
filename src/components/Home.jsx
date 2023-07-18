@@ -7,8 +7,6 @@ import item4 from '../assets/images/item4.png';
 import item5 from '../assets/images/item5.png';
 import item6 from '../assets/images/item6.png';
 import item7 from '../assets/images/item7.png';
-// import { Link } from "react-router-dom";
-// import logo from '../assets/images/logo.png';
 
 
 const Home = () => {
@@ -83,19 +81,6 @@ const Home = () => {
             />
           </div>
         </div>
-        {/* <footer className='absolute w-full h-[130px] bg-gradient-to-r from-[#70b7c9] via-[#70b7c9]  to-[#82c5aa]   bottom-0 '>
-          <div className='mt-2 flex items-center justify-around '>
-            <Link to="/" className='py-2 px-6 mt-4 text-[#70b7c9] text-2xl font-black bg-[#ffffff]  rounded-full'>
-              Back
-            </Link>
-            <div className='px-[15%]'>
-              <img src={logo} className='w-[190px]' alt="logo" />
-            </div>
-            <Link to="/customize-item" className='py-2 px-6 mt-4 text-[#70b7c9] text-2xl font-black bg-[#ffffff] rounded-full'>
-              Next
-            </Link>
-          </div>
-        </footer> */}
       </Base>
     </>
   )
