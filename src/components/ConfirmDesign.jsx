@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
+import MyContext from './MyContext';
 import bgImg from '../assets/images/bgImg.png';
 import logo from '../assets/images/logo.png';
 
+
 const ConfirmDesign = () => {
+
+    const { selectedImage } = useContext(MyContext);
+
     return (
         <>
             <div>
@@ -17,6 +22,7 @@ const ConfirmDesign = () => {
                         CONFIRM YOUR DESIGN
                     </div>
                     <div className='absolute bg-[#ffffff] w-[586px] h-[380px] top-[250px] left-[218px] flex items-center justify-center'>
+                    {selectedImage && <img src={selectedImage} alt="Selected Img" /> }
                     </div>
                     <div>
                         <Link to="/choose-graphics" className='absolute top-[664px] left-[38px] w-[203px] h-[61px] text-[#7f0b16] bg-[#ffffff] 
